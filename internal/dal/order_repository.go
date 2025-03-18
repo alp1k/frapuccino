@@ -245,3 +245,7 @@ func (repo *OrderRepository) GetEarliestDate() string {
 	row.Scan(&Date)
 	return Date
 }
+
+func (repo *OrderRepository) SearchRepo() bool {
+
+}

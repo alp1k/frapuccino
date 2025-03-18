@@ -173,5 +173,5 @@ func (s *OrderService) GetNumberOfItems(startDate, endDate string) (map[string]i
 }
 
 func (s *OrderService) SearchService(minPrice, maxPrice int, args []string, querySrting string) error {
-	return nil
-}
+	return orderRepo.SearchRepo(args)
+} 
